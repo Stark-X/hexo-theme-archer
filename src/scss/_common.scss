@@ -75,19 +75,19 @@ li {
 .back-top {
   position: fixed;
   display: block;
+  font-family: 'iconfont-archer';
   left: 1rem;
   bottom: 1rem;
   z-index: 10;
-  opacity: 0;
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
   line-height: 1.5rem;
-  border: 2px solid #000;
-  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #333333;
   cursor: pointer;
+  opacity: 0;
   &:hover {
-    background-color: #000;
+    background-color: #333333;
     color: #fff;
   }
 }
@@ -100,17 +100,17 @@ li {
 // selection
 ::selection {
   background: $selection-color;
-  color: #eee;
+  color: rgb(255, 255, 255);
 }
 
 ::-moz-selection {
   background: $selection-color;
-  color: #eee;
+  color: rgb(255, 255, 255);
 }
 
 ::-webkit-selection {
   background: $selection-color;
-  color: #eee;
+  color: rgb(255, 255, 255);
 }
 
 .fancy-link {
