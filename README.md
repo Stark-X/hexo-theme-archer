@@ -1,5 +1,4 @@
-hexo-theme-archer
-================
+# hexo-theme-archer
 
 ![preview](./docs/snap.png)
 
@@ -11,10 +10,9 @@ hexo-theme-archer
 
 - [English document](./docs/README-en.md)
 
-
 - [二次开发文档](./docs/develop-guide-zh.md)
 
-##  更新
+## 更新
 
 - 2017.08.17 - 『添加了置顶显示』
 - 2017.08.26 - 『添加了二次开发文档，文章页 header 在下滑时隐藏』
@@ -28,7 +26,7 @@ hexo-theme-archer
 - 2018.02.04 - 『代码重构，性能优化，样式更新，V1.0.0』
 - 2018.02.24 - 『支持显示微信和 QQ 二维码』
 - 2018.02.28 - 『重写分享功能，分享按钮在头图上』
-- 2018.03.04 - 『头图的高度可以自定义了，配置  _config 即可』
+- 2018.03.04 - 『头图的高度可以自定义了，配置 \_config 即可』
 - 2018.03.11 - 『toc 可以根据阅读位置自动展开和收缩了』
 - 2018.03.18 - 『添加 fancybox』
 - 2018.05.01 - 『添加 license』
@@ -37,35 +35,36 @@ hexo-theme-archer
 - 2018.06.23 - 『添加 Valine 评论，感谢 [hulichao](https://github.com/fi3ework/hexo-theme-archer/issues/115) 同学』
 - 2018.07.09 - 『可以切换深/浅色代码配色方案了，[详情](https://github.com/fi3ework/hexo-theme-archer/wiki/%E5%88%87%E6%8D%A2%E4%BB%A3%E7%A0%81%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88)』
 - 2018.08.26 - 『添加 i18n 支持』
-- 2020.03.02 - 『添加 Gitalk评论 支持』
-- 2020.03.04 - 『添加 utteranc评论 支持』
+- 2020.03.02 - 『添加 Gitalk 评论 支持』
+- 2020.03.04 - 『添加 utteranc 评论 支持』
 - 2020.01.26 - 『更新使用的 nodejs，以及相关依赖包的版本』
 - 2020.02.03 - 『添加“文章时效性”提示』
+- 2021.05.19 - 『修复了一些页面设计的问题，供 [Lolipop](https://github.com/LolipopJ) 使用』
 
 ## 说明
 
-- 本主题受 [yilia](https://github.com/litten/hexo-theme-yilia) 主题和 [huxpro](https://github.com/Huxpro/huxpro.github.io) 主题的启发，结合了前者的 sidebar 设计及后者的 UI 设计。通过 sidebar 能够不跳转到 archive 页、tag页及 categories 页进行导航。
+- 本主题受 [yilia](https://github.com/litten/hexo-theme-yilia) 主题和 [huxpro](https://github.com/Huxpro/huxpro.github.io) 主题的启发，结合了前者的 sidebar 设计及后者的 UI 设计。通过 sidebar 能够不跳转到 archive 页、tag 页及 categories 页进行导航。
 - 兼容性：现代浏览器及 IE10+。
 - 有任何使用上的问题欢迎 [**发起 issue**](https://github.com/fi3ework/hexo-theme-archer/wiki/%E5%90%AF%E7%94%A8-Algolia-%E6%90%9C%E7%B4%A2)。
 - Due to lack of time, this theme is not guaranteed to be maintained, welcome fork 👋🏻.
 
-##  安装
+## 安装
 
-1. 在**Hexo目录**下执行
+1. 在**Hexo 目录**下执行
 
-``` shell
+```shell
 npm i hexo-generator-json-content --save && npm i --save hexo-wordcount && git clone https://github.com/fi3ework/hexo-theme-archer.git themes/archer --depth=1
 ```
 
-2. 修改**Hexo目录**下的 `_config.yml` 的 `theme` 字段为 `archer`
+2. 修改**Hexo 目录**下的 `_config.yml` 的 `theme` 字段为 `archer`
 
-``` yaml
+```yaml
 theme: archer
 ```
 
-3. 添加sidebar启用支持：
+3. 添加 sidebar 启用支持：
 
-在**Hexo目录**下的 `_config.yml` 中添加以下字段（不是archer下的 `_config.yml`）
+在**Hexo 目录**下的 `_config.yml` 中添加以下字段（不是 archer 下的 `_config.yml`）
 
 ```yaml
 jsonContent:
@@ -88,7 +87,6 @@ jsonContent:
     tags: true
 ```
 
-
 ## 可选配置
 
 - [启用 about 页](https://github.com/fi3ework/hexo-theme-archer/wiki/%E5%90%AF%E7%94%A8about%E9%A1%B5)
@@ -107,9 +105,9 @@ jsonContent:
 
 ## 主题配置
 
-复制 [_config.yml](./_config.yml) 到 hexo 根目录，并改名为 **_config.archer.yml**，再对值做修改。(Hexo 2.8.2 之后的特性)
+复制 [\_config.yml](./_config.yml) 到 hexo 根目录，并改名为 **\_config.archer.yml**，再对值做修改。(Hexo 2.8.2 之后的特性)
 
-**注意** 不要把自己 api token 之类的敏感信息推送到公共仓库
+**注意**：不要把自己 api token 之类的敏感信息推送到公共仓库
 
 ## 更新主题
 
@@ -123,7 +121,7 @@ jsonContent:
 
 ### 简单粗暴
 
-首先备份 archer 下所有你自定义过的文件（包括 _config.yml 和 source 文件夹下添加的文件等），然后删除 archer，再重新安装，最后将备份的文件替换到原来的位置即可。
+首先备份 archer 下所有你自定义过的文件（包括 `_config.yml` 和 `source` 文件夹下添加的文件等），然后删除 archer，再重新安装，最后将备份的文件替换到原来的位置即可。
 
 ## License
 
