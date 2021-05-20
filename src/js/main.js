@@ -6,18 +6,12 @@ import InitSidebarLink from './tag'
 import toc from './toc'
 import fancybox from './fancybox'
 
-let logStyle =
-  'color: #fff; background: #61bfad; padding: 1px; border-radius: 5px;'
+// print custom info
+const logStyle = 'color: #fff; background: #f75357; padding: 1px; border-radius: 5px;'
 console.info('%c 🎯 hexo-theme-archer ⬇️ ', logStyle)
-console.info('%c 📅 Version date: 20210519', logStyle)
-console.info(
-  '%c 📦 Source repo: https://github.com/fi3ework/hexo-theme-archer',
-  logStyle
-)
-console.info(
-  '%c 📬 Lolipop version repo: https://github.com/LolipopJ/hexo-theme-archer',
-  logStyle
-)
+console.info('%c 🏷 Version: 1.6.2 ', logStyle)
+console.info('%c 📅 Version date: 20210520 ', logStyle)
+console.info('%c 📦 https://github.com/fi3ework/hexo-theme-archer ', logStyle)
 
 // remove background placeholder
 init()
@@ -41,7 +35,7 @@ metas.addTab({
 
 // init toc
 window.addEventListener('load', function (event) {
-  console.log('All resources finished loading!')
+  // console.log('All resources finished loading!')
   toc()
 })
 
